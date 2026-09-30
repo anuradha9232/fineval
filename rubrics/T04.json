@@ -1,0 +1,18 @@
+{
+  "task_id": "T04",
+  "task_title": "Quarter-on-quarter growth by sector",
+  "dataset": "segment_quarterly.csv",
+  "prompt_type": "closed",
+  "criteria": [
+    {"id": "P1", "type": "positive", "weight": 30, "category": "accuracy",
+     "text": "States that IT Services had the highest Q4-over-Q3 revenue growth (approximately 8.5%)."},
+    {"id": "P2", "type": "positive", "weight": 35, "category": "accuracy",
+     "text": "States that Automobile had the lowest Q4-over-Q3 growth (approximately -30%)."},
+    {"id": "P3", "type": "positive", "weight": 20, "category": "accuracy",
+     "text": "States that Automobile revenue declined in Q4 (negative growth)."},
+    {"id": "N1", "type": "negative", "weight": -30, "category": "accuracy",
+     "text": "Names a sector other than Automobile as the weakest or declining sector."},
+    {"id": "N2", "type": "negative", "weight": -15, "category": "accuracy",
+     "text": "Reports growth as an absolute rupee difference instead of a percentage change."}
+  ]
+}

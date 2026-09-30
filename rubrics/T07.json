@@ -1,0 +1,18 @@
+{
+  "task_id": "T07",
+  "task_title": "Largest sector and revenue concentration",
+  "dataset": "segment_quarterly.csv",
+  "prompt_type": "closed",
+  "criteria": [
+    {"id": "P1", "type": "positive", "weight": 30, "category": "accuracy",
+     "text": "States that IT Services is the largest sector by FY revenue."},
+    {"id": "P2", "type": "positive", "weight": 20, "category": "accuracy",
+     "text": "Reports IT Services FY revenue as Rs 1,855 crore."},
+    {"id": "P3", "type": "positive", "weight": 20, "category": "accuracy",
+     "text": "Reports the IT Services share of FY revenue as approximately 23.1%."},
+    {"id": "P4", "type": "positive", "weight": 15, "category": "reasoning",
+     "text": "States that the top two sectors (IT Services and Banking) together make up more than 40% of FY revenue."},
+    {"id": "N1", "type": "negative", "weight": -15, "category": "accuracy",
+     "text": "Names a sector other than IT Services as the largest by FY revenue."}
+  ]
+}

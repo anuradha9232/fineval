@@ -1,0 +1,13 @@
+{
+  "model": "model_alpha",
+  "description": "A strong model. Gets the core results and reasoning right; misses a few lower-weight details. Illustrative judgments authored by a human rater applying the rubrics.",
+  "judgments": {
+    "T01": {"P1": true, "P2": true, "P3": true, "P4": true, "N1": false, "N2": false, "N3": false},
+    "T02": {"P1": true, "P2": true, "P3": false, "N1": false, "N2": false},
+    "T03": {"P1": true, "P2": true, "P3": true, "N1": false, "N2": false},
+    "T04": {"P1": true, "P2": true, "P3": true, "N1": false, "N2": false},
+    "T05": {"P1": true, "P2": true, "P3": true, "S1": true, "S2": false, "P4": true, "N1": false, "N2": false},
+    "T06": {"P1": true, "P2": true, "P3": true, "N1": false, "N2": false},
+    "T07": {"P1": true, "P2": true, "P3": true, "P4": false, "N1": false}
+  }
+}

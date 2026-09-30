@@ -1,0 +1,18 @@
+{
+  "task_id": "T02",
+  "task_title": "Average net margin and sector ranking",
+  "dataset": "company_financials.csv",
+  "prompt_type": "closed",
+  "criteria": [
+    {"id": "P1", "type": "positive", "weight": 30, "category": "accuracy",
+     "text": "Reports the average net margin across the companies as approximately 14.0%."},
+    {"id": "P2", "type": "positive", "weight": 25, "category": "accuracy",
+     "text": "States that IT Services has the highest average net margin (approximately 21.3%)."},
+    {"id": "P3", "type": "positive", "weight": 20, "category": "accuracy",
+     "text": "States that Automobile has the lowest average net margin (approximately 9.0%)."},
+    {"id": "N1", "type": "negative", "weight": -25, "category": "accuracy",
+     "text": "Computes the average margin as total profit divided by total revenue (about 13.3%) and labels it the average net margin."},
+    {"id": "N2", "type": "negative", "weight": -15, "category": "accuracy",
+     "text": "Names a sector other than IT Services as the highest-margin sector."}
+  ]
+}

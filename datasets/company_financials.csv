@@ -1,0 +1,121 @@
+company,sector,revenue_cr,net_profit_cr,market_cap_cr
+Company_001,IT Services,503,109,1397
+Company_002,Automobile,2621,232,3917
+Company_003,FMCG,241,43,1124
+Company_004,Pharma,811,135,2583
+Company_005,Pharma,1270,188,2646
+Company_006,Energy,1859,248,4254
+Company_007,IT Services,2080,484,6522
+Company_008,Automobile,2240,282,4349
+Company_009,Banking,801,149,1659
+Company_010,IT Services,723,133,1593
+Company_011,FMCG,2374,235,4106
+Company_012,Energy,923,138,1888
+Company_013,Automobile,348,46,1080
+Company_014,Automobile,395,29,1430
+Company_015,Automobile,479,33,50
+Company_016,Automobile,1715,212,3768
+Company_017,FMCG,1247,133,1899
+Company_018,IT Services,2041,394,6080
+Company_019,Energy,747,89,1425
+Company_020,Pharma,1265,187,1606
+Company_021,FMCG,1926,269,5062
+Company_022,Pharma,830,129,1359
+Company_023,Banking,1654,314,4735
+Company_024,Energy,604,86,973
+Company_025,Automobile,791,65,619
+Company_026,FMCG,778,124,2185
+Company_027,Pharma,374,37,408
+Company_028,Automobile,1700,134,2739
+Company_029,FMCG,719,82,1264
+Company_030,Pharma,1109,137,3266
+Company_031,Pharma,1690,226,2748
+Company_032,Banking,1639,279,4265
+Company_033,IT Services,1996,494,8573
+Company_034,FMCG,1004,101,1557
+Company_035,Energy,749,76,1984
+Company_036,IT Services,1021,210,3668
+Company_037,Energy,240,22,371
+Company_038,Automobile,298,33,658
+Company_039,Banking,333,65,2009
+Company_040,FMCG,447,81,2050
+Company_041,IT Services,1572,339,5178
+Company_042,Automobile,485,29,574
+Company_043,Automobile,780,57,1615
+Company_044,Pharma,3531,591,8656
+Company_045,IT Services,796,179,2688
+Company_046,Energy,2130,144,2661
+Company_047,Pharma,473,77,1459
+Company_048,Energy,912,97,1344
+Company_049,Automobile,466,72,249
+Company_050,Automobile,808,110,688
+Company_051,Automobile,2336,127,2320
+Company_052,Banking,232,40,246
+Company_053,Pharma,1621,188,2341
+Company_054,Pharma,1358,193,3414
+Company_055,Pharma,642,109,2320
+Company_056,IT Services,298,76,522
+Company_057,FMCG,1170,138,2640
+Company_058,IT Services,681,136,1922
+Company_059,Automobile,1352,21,630
+Company_060,Automobile,1118,84,1829
+Company_061,Energy,4636,316,6710
+Company_062,Automobile,884,57,797
+Company_063,Pharma,437,58,1402
+Company_064,Energy,1289,125,1317
+Company_065,Pharma,1337,143,1983
+Company_066,Banking,3727,507,7940
+Company_067,Energy,2325,381,6973
+Company_068,Pharma,1512,184,3576
+Company_069,IT Services,4093,766,10635
+Company_070,Pharma,376,81,1598
+Company_071,Automobile,617,103,1543
+Company_072,Banking,476,69,1174
+Company_073,Pharma,772,115,1563
+Company_074,IT Services,318,73,1255
+Company_075,Automobile,1942,256,3309
+Company_076,Pharma,898,117,2569
+Company_077,Banking,292,50,1387
+Company_078,Banking,440,89,1762
+Company_079,FMCG,1454,223,2623
+Company_080,Automobile,2332,160,3563
+Company_081,Energy,6615,635,11031
+Company_082,Pharma,15100,1793,24198
+Company_083,IT Services,1592,339,4124
+Company_084,Automobile,450,32,446
+Company_085,FMCG,161,24,50
+Company_086,Automobile,1395,88,846
+Company_087,IT Services,528,124,2759
+Company_088,Banking,755,159,2531
+Company_089,Automobile,632,54,535
+Company_090,Automobile,966,87,651
+Company_091,Pharma,2862,462,4725
+Company_092,Automobile,1263,101,1779
+Company_093,Energy,951,75,2734
+Company_094,Pharma,432,73,1114
+Company_095,Energy,243,24,187
+Company_096,Banking,708,172,3134
+Company_097,Banking,1045,237,2204
+Company_098,Automobile,5384,493,9323
+Company_099,FMCG,1233,144,1949
+Company_100,IT Services,2656,496,8950
+Company_101,Automobile,700,81,1801
+Company_102,Banking,377,71,1294
+Company_103,Automobile,460,43,949
+Company_104,IT Services,571,96,1334
+Company_105,Automobile,7447,803,10839
+Company_106,Automobile,524,49,1587
+Company_107,Automobile,2332,109,1514
+Company_108,FMCG,487,61,610
+Company_109,Pharma,2536,426,6140
+Company_110,Automobile,1551,127,2473
+Company_111,Banking,952,163,3332
+Company_112,Automobile,1057,81,940
+Company_113,FMCG,608,81,1738
+Company_114,Pharma,1638,270,3252
+Company_115,FMCG,728,134,2201
+Company_116,FMCG,364,23,1302
+Company_117,IT Services,347,74,739
+Company_118,IT Services,1281,289,4338
+Company_119,Banking,4542,858,9647
+Company_120,IT Services,1266,264,4600

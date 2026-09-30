@@ -1,0 +1,22 @@
+{
+  "task_id": "T01",
+  "task_title": "What drives market cap — revenue or profit?",
+  "dataset": "company_financials.csv",
+  "prompt_type": "closed",
+  "criteria": [
+    {"id": "P1", "type": "positive", "weight": 15, "category": "accuracy",
+     "text": "States that the average revenue across the 120 companies is approximately Rs 1,435 crore."},
+    {"id": "P2", "type": "positive", "weight": 40, "category": "accuracy",
+     "text": "Reports the Pearson correlation between revenue and market cap as approximately 0.92."},
+    {"id": "P3", "type": "positive", "weight": 40, "category": "accuracy",
+     "text": "Reports the Pearson correlation between net profit and market cap as approximately 0.97."},
+    {"id": "P4", "type": "positive", "weight": 25, "category": "reasoning",
+     "text": "States that net profit is more strongly correlated with market cap than revenue is."},
+    {"id": "N1", "type": "negative", "weight": -40, "category": "accuracy",
+     "text": "Reports the two correlations as roughly equal, or states that revenue is the stronger predictor of market cap."},
+    {"id": "N2", "type": "negative", "weight": -20, "category": "reasoning",
+     "text": "States that profit causes market cap, presenting the correlation as a causal relationship."},
+    {"id": "N3", "type": "negative", "weight": -15, "category": "accuracy",
+     "text": "Reports a correlation value above 1.0 or below -1.0."}
+  ]
+}

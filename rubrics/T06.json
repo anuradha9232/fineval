@@ -1,0 +1,18 @@
+{
+  "task_id": "T06",
+  "task_title": "Anomaly detection in quarterly revenue",
+  "dataset": "segment_quarterly.csv",
+  "prompt_type": "open",
+  "criteria": [
+    {"id": "P1", "type": "positive", "weight": 35, "category": "accuracy",
+     "text": "Identifies Automobile Q4 as the anomaly or outlier in the data."},
+    {"id": "P2", "type": "positive", "weight": 20, "category": "reasoning",
+     "text": "Notes that Automobile Q4 fell about 30% while every other sector grew in Q4."},
+    {"id": "P3", "type": "positive", "weight": 15, "category": "reasoning",
+     "text": "Recommends investigating the cause of the Automobile Q4 drop before drawing conclusions."},
+    {"id": "N1", "type": "negative", "weight": -25, "category": "accuracy",
+     "text": "Identifies a sector or quarter other than Automobile Q4 as the main anomaly."},
+    {"id": "N2", "type": "negative", "weight": -15, "category": "reasoning",
+     "text": "Concludes that the overall business is in decline based on this single quarterly drop."}
+  ]
+}

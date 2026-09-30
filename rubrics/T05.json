@@ -1,0 +1,24 @@
+{
+  "task_id": "T05",
+  "task_title": "FY revenue and share table (spreadsheet output)",
+  "dataset": "segment_quarterly.csv",
+  "prompt_type": "spreadsheet",
+  "criteria": [
+    {"id": "P1", "type": "positive", "weight": 30, "category": "accuracy",
+     "text": "States that total FY revenue across all sectors is Rs 8,018 crore."},
+    {"id": "P2", "type": "positive", "weight": 25, "category": "accuracy",
+     "text": "States that IT Services is the largest sector by FY revenue at Rs 1,855 crore."},
+    {"id": "P3", "type": "positive", "weight": 20, "category": "accuracy",
+     "text": "Reports the IT Services share of FY revenue as approximately 23.1%."},
+    {"id": "S1", "type": "positive", "weight": 8, "category": "accuracy",
+     "text": "Reports Banking FY revenue as Rs 1,605 crore (spot check)."},
+    {"id": "S2", "type": "positive", "weight": 8, "category": "accuracy",
+     "text": "Reports Automobile FY revenue as Rs 780 crore (spot check)."},
+    {"id": "P4", "type": "positive", "weight": 10, "category": "instruction-following",
+     "text": "Presents the result as a table sorted by FY revenue."},
+    {"id": "N1", "type": "negative", "weight": -20, "category": "accuracy",
+     "text": "Reports a total FY revenue other than Rs 8,018 crore."},
+    {"id": "N2", "type": "negative", "weight": -10, "category": "accuracy",
+     "text": "Reports sector shares that do not sum to approximately 100%."}
+  ]
+}

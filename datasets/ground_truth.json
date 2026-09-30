@@ -1,0 +1,53 @@
+{
+  "dataset_A_company_financials": {
+    "row_count": 120,
+    "avg_revenue_cr": 1435.3,
+    "avg_net_margin_pct": 14.02,
+    "pearson_revenue_vs_marketcap": 0.924,
+    "pearson_profit_vs_marketcap": 0.972,
+    "highest_margin_sector": "IT Services",
+    "highest_margin_sector_pct": 21.27,
+    "lowest_margin_sector": "Automobile",
+    "lowest_margin_sector_pct": 9.04
+  },
+  "dataset_B_segment_quarterly": {
+    "fy_total_cr": 8018,
+    "fy_revenue_by_sector_cr": {
+      "IT Services": 1855,
+      "Banking": 1605,
+      "Pharma": 1245,
+      "FMCG": 1093,
+      "Automobile": 780,
+      "Energy": 1440
+    },
+    "fy_share_by_sector_pct": {
+      "IT Services": 23.14,
+      "Banking": 20.02,
+      "Pharma": 15.53,
+      "FMCG": 13.63,
+      "Automobile": 9.73,
+      "Energy": 17.96
+    },
+    "largest_sector_fy": "IT Services",
+    "largest_sector_fy_cr": 1855,
+    "largest_sector_fy_share_pct": 23.14,
+    "growth_q4_vs_q3_pct": {
+      "IT Services": 8.51,
+      "Banking": 6.17,
+      "Pharma": 8.2,
+      "FMCG": 5.45,
+      "Automobile": -30.23,
+      "Energy": 6.94
+    },
+    "highest_growth_sector": "IT Services",
+    "highest_growth_pct": 8.51,
+    "lowest_growth_sector": "Automobile",
+    "lowest_growth_pct": -30.23,
+    "anomaly": {
+      "sector": "Automobile",
+      "quarter": "Q4",
+      "value_cr": 150,
+      "note": "Automobile Q4 fell ~30% while every other sector grew; clear outlier."
+    }
+  }
+}

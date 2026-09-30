@@ -1,0 +1,18 @@
+{
+  "task_id": "T03",
+  "task_title": "Valuation drivers (open-ended insight)",
+  "dataset": "company_financials.csv",
+  "prompt_type": "open",
+  "criteria": [
+    {"id": "P1", "type": "positive", "weight": 30, "category": "reasoning",
+     "text": "Concludes that net profit is the better predictor of market cap, grounded in the correlation values."},
+    {"id": "P2", "type": "positive", "weight": 20, "category": "reasoning",
+     "text": "Notes that both revenue and profit are strongly correlated with market cap, not only one of them."},
+    {"id": "P3", "type": "positive", "weight": 20, "category": "reasoning",
+     "text": "Gives a valid investor caution, such as association not implying causation, or the pattern being specific to this sample or period."},
+    {"id": "N1", "type": "negative", "weight": -25, "category": "reasoning",
+     "text": "Claims that profit causes market cap, presenting the correlation as a proven causal mechanism."},
+    {"id": "N2", "type": "negative", "weight": -15, "category": "reasoning",
+     "text": "Treats this 120-company snapshot as a universal rule that holds for all companies and time periods."}
+  ]
+}
