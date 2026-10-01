@@ -1,4 +1,14 @@
-# FinEval - A Rubric-Based LLM Evaluation Harness
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:1F4E78,100:2E75B6&height=120&section=header&text=FinEval&fontSize=46&fontColor=ffffff&desc=A%20Rubric-Based%20LLM%20Evaluation%20Harness&descSize=16&descAlignY=80" alt="FinEval" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/LLM-Evaluation-1F4E78?style=flat-square" alt="LLM Evaluation" />
+  <img src="https://img.shields.io/badge/Reproducible-yes-success?style=flat-square" alt="Reproducible" />
+  <img src="https://img.shields.io/badge/Model%20A%20vs%20B-92.9%25%20vs%2045.9%25-2E75B6?style=flat-square" alt="Result" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License MIT" />
+</p>
 
 FinEval is a small, complete, reproducible system for **evaluating large language models on finance data-analysis tasks** - the same evaluation loop used in AI-training and RLHF work, built end to end so anyone can run it and get identical results.
 
