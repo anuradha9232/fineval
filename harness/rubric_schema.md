@@ -1,13 +1,13 @@
 # Rubric Schema
 
-Each rubric is a JSON file in `rubrics/` named by task id (e.g. `T01.json`). Keeping rubrics as structured data — not prose — is what lets the scoring engine apply them mechanically and reproducibly.
+Each rubric is a JSON file in `rubrics/` named by task id (e.g. `T01.json`). Keeping rubrics as structured data - not prose - is what lets the scoring engine apply them mechanically and reproducibly.
 
 ## Structure
 
 ```json
 {
   "task_id": "T01",
-  "task_title": "What drives market cap — revenue or profit?",
+  "task_title": "What drives market cap - revenue or profit?",
   "dataset": "company_financials.csv",
   "prompt_type": "closed",
   "criteria": [
@@ -46,6 +46,6 @@ Each rubric is a JSON file in `rubrics/` named by task id (e.g. `T01.json`). Kee
 - Each criterion is **atomic** (one idea), **self-contained** (the answer is in the text), and **objective** (pass/fail without opinion).
 - Positive criteria carry the **required results**; the highest weights go on the results that matter most (accuracy over formatting).
 - Negative criteria target **predictable mistakes**, and never exceed the absolute weight of their matching positive criterion.
-- A negative criterion is written in positive language — the minus sign carries the penalty.
+- A negative criterion is written in positive language - the minus sign carries the penalty.
 
 These are the same principles documented in the companion [evaluation-rubric-library](https://github.com/anuradha9232/evaluation-rubric-library); FinEval is where they're applied inside a running system.

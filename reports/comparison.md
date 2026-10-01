@@ -9,7 +9,7 @@ All models scored on the identical rubric set and weights.
 | model_alpha | 563 | 606 | 92.9% |
 | model_beta | 278 | 606 | 45.9% |
 
-**Relative advantage of model_alpha over model_beta: 50.6%**  = (563 − 278) / 563
+**Relative advantage of model_alpha over model_beta: 50.6%**  = (563 - 278) / 563
 
 This clears the 15% relative-advantage bar used to confirm a task meaningfully separates a strong model from a weak one.
 
@@ -17,7 +17,7 @@ This clears the 15% relative-advantage bar used to confirm a task meaningfully s
 
 | Task | model_alpha | model_beta |
 |---|---:|---:|
-| T01 What drives market cap — revenue or profit? | 100% | 46% |
+| T01 What drives market cap - revenue or profit? | 100% | 46% |
 | T02 Average net margin and sector ranking | 73% | 27% |
 | T03 Valuation drivers (open-ended insight) | 100% | 0% |
 | T04 Quarter-on-quarter growth by sector | 100% | 82% |

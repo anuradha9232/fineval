@@ -1,10 +1,10 @@
-# Scorecard — model_beta
+# Scorecard - model_beta
 
 *A weaker model. Makes the predictable mistakes the negative criteria target: flips the correlation comparison, averages the margin the wrong way, over-interprets, and slips on totals. Illustrative judgments authored by a human rater applying the rubrics.*
 
 **Overall: 278 / 606 = 45.9%**
 
-## T01 — What drives market cap — revenue or profit?
+## T01 - What drives market cap - revenue or profit?
 
 Score: **55 / 120**
 
@@ -18,7 +18,7 @@ Score: **55 / 120**
 | N2 States that profit causes market cap, presenting the correlation as a causal relationship. | negative | -20 | no | +0 |
 | N3 Reports a correlation value above 1.0 or below -1.0. | negative | -15 | no | +0 |
 
-## T02 — Average net margin and sector ranking
+## T02 - Average net margin and sector ranking
 
 Score: **20 / 75**
 
@@ -30,7 +30,7 @@ Score: **20 / 75**
 | N1 Computes the average margin as total profit divided by total revenue (about 13.3%) and labels it the average net margin. | negative | -25 | yes | -25 |
 | N2 Names a sector other than IT Services as the highest-margin sector. | negative | -15 | no | +0 |
 
-## T03 — Valuation drivers (open-ended insight)
+## T03 - Valuation drivers (open-ended insight)
 
 Score: **0 / 70**  (raw -10, floored to 0)
 
@@ -42,7 +42,7 @@ Score: **0 / 70**  (raw -10, floored to 0)
 | N1 Claims that profit causes market cap, presenting the correlation as a proven causal mechanism. | negative | -25 | yes | -25 |
 | N2 Treats this 120-company snapshot as a universal rule that holds for all companies and time periods. | negative | -15 | yes | -15 |
 
-## T04 — Quarter-on-quarter growth by sector
+## T04 - Quarter-on-quarter growth by sector
 
 Score: **70 / 85**
 
@@ -54,7 +54,7 @@ Score: **70 / 85**
 | N1 Names a sector other than Automobile as the weakest or declining sector. | negative | -30 | no | +0 |
 | N2 Reports growth as an absolute rupee difference instead of a percentage change. | negative | -15 | yes | -15 |
 
-## T05 — FY revenue and share table (spreadsheet output)
+## T05 - FY revenue and share table (spreadsheet output)
 
 Score: **43 / 101**
 
@@ -69,7 +69,7 @@ Score: **43 / 101**
 | N1 Reports a total FY revenue other than Rs 8,018 crore. | negative | -20 | yes | -20 |
 | N2 Reports sector shares that do not sum to approximately 100%. | negative | -10 | no | +0 |
 
-## T06 — Anomaly detection in quarterly revenue
+## T06 - Anomaly detection in quarterly revenue
 
 Score: **40 / 70**
 
@@ -81,7 +81,7 @@ Score: **40 / 70**
 | N1 Identifies a sector or quarter other than Automobile Q4 as the main anomaly. | negative | -25 | no | +0 |
 | N2 Concludes that the overall business is in decline based on this single quarterly drop. | negative | -15 | yes | -15 |
 
-## T07 — Largest sector and revenue concentration
+## T07 - Largest sector and revenue concentration
 
 Score: **50 / 85**
 

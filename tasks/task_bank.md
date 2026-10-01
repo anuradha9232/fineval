@@ -1,10 +1,10 @@
 # Task Bank
 
-Seven evaluation tasks across two finance datasets. Each task is an adversarial prompt designed to be hard in a specific, known way — a place where models predictably slip. Each has a verified ground-truth answer (`datasets/ground_truth.json`) and a weighted rubric (`rubrics/<id>.json`).
+Seven evaluation tasks across two finance datasets. Each task is an adversarial prompt designed to be hard in a specific, known way - a place where models predictably slip. Each has a verified ground-truth answer (`datasets/ground_truth.json`) and a weighted rubric (`rubrics/<id>.json`).
 
 | ID | Title | Dataset | Type | Targets this weakness |
 |---|---|---|---|---|
-| [T01](T01.md) | What drives market cap — revenue or profit? | company_financials | closed | Confusing which of two similar correlations is stronger |
+| [T01](T01.md) | What drives market cap - revenue or profit? | company_financials | closed | Confusing which of two similar correlations is stronger |
 | [T02](T02.md) | Average net margin and sector ranking | company_financials | closed | Averaging a ratio the wrong way (mean of ratios vs ratio of totals) |
 | [T03](T03.md) | Valuation drivers | company_financials | open | Over-claiming: correlation stated as causation |
 | [T04](T04.md) | Quarter-on-quarter growth by sector | segment_quarterly | closed | Growth as absolute difference instead of percentage |
@@ -22,5 +22,5 @@ Seven evaluation tasks across two finance datasets. Each task is an adversarial 
 
 Every task file contains:
 1. The **prompt** given to the model (natural language).
-2. **Metadata** — dataset, type, and the weakness it targets.
+2. **Metadata** - dataset, type, and the weakness it targets.
 3. A pointer to the **verified answer** and the **rubric**.

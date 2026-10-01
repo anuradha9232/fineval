@@ -83,7 +83,7 @@ def score_model(rubrics, model):
 
 def write_scorecard(model, rubrics, scored):
     name = model["model"]
-    lines = [f"# Scorecard — {name}", ""]
+    lines = [f"# Scorecard - {name}", ""]
     lines.append(f"*{model.get('description', '')}*", )
     lines.append("")
     lines.append(f"**Overall: {scored['total_score']} / {scored['total_max']} "
@@ -93,7 +93,7 @@ def write_scorecard(model, rubrics, scored):
     for tid in sorted(rubrics):
         r = rubrics[tid]
         res = scored["per_task"][tid]
-        lines.append(f"## {tid} — {r['task_title']}")
+        lines.append(f"## {tid} - {r['task_title']}")
         lines.append("")
         lines.append(f"Score: **{res['score']} / {res['max_pos']}**"
                      + (f"  (raw {res['raw']}, floored to 0)" if res["raw"] < 0 else ""))
@@ -137,7 +137,7 @@ def write_comparison(models_scored, rubrics):
         adv = relative_advantage(sa["total_score"], sb["total_score"])
         lines.append(f"**Relative advantage of {ma['model']} over {mb['model']}: "
                      f"{adv*100:.1f}%**  "
-                     f"= ({sa['total_score']} − {sb['total_score']}) / {sa['total_score']}")
+                     f"= ({sa['total_score']} - {sb['total_score']}) / {sa['total_score']}")
         lines.append("")
         verdict = "clears" if adv >= 0.15 else "does not clear"
         lines.append(f"This {verdict} the 15% relative-advantage bar used to confirm a task "

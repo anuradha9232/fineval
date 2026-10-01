@@ -1,12 +1,12 @@
-# FinEval — A Rubric-Based LLM Evaluation Harness
+# FinEval - A Rubric-Based LLM Evaluation Harness
 
-FinEval is a small, complete, reproducible system for **evaluating large language models on finance data-analysis tasks** — the same evaluation loop used in AI-training and RLHF work, built end to end so anyone can run it and get identical results.
+FinEval is a small, complete, reproducible system for **evaluating large language models on finance data-analysis tasks** - the same evaluation loop used in AI-training and RLHF work, built end to end so anyone can run it and get identical results.
 
 It brings together the pieces that make model evaluation rigorous instead of subjective: a bank of adversarial prompts, datasets with verified ground truth, weighted rubrics of positive and negative criteria, an automated scoring engine, and a two-model comparison with a relative-advantage metric.
 
 ## Why it exists
 
-Evaluating a model well is a quality-assurance problem: you need objective, weighted criteria and a reproducible way to apply them. FinEval packages that whole workflow — prompt design → ground truth → rubric → judgment → score → report — into one runnable project.
+Evaluating a model well is a quality-assurance problem: you need objective, weighted criteria and a reproducible way to apply them. FinEval packages that whole workflow - prompt design -> ground truth -> rubric -> judgment -> score -> report - into one runnable project.
 
 ## Architecture
 
@@ -15,7 +15,7 @@ Evaluating a model well is a quality-assurance problem: you need objective, weig
   tasks/           7 adversarial finance prompts, each targeting a known weakness
   rubrics/         one weighted rubric per task (JSON: positive + negative criteria)
   responses/       a rater's pass/fail judgment of each criterion, per model
-  harness/         score.py — applies rubrics to judgments, writes scorecards
+  harness/         score.py - applies rubrics to judgments, writes scorecards
   reports/         generated scorecards + a model comparison
   docs/            methodology and the model-failure taxonomy
 ```
@@ -37,7 +37,7 @@ Two illustrative models scored on the identical seven-task rubric set:
 | model_alpha (strong) | 563 / 606 | **92.9%** |
 | model_beta (weak) | 278 / 606 | **45.9%** |
 
-**Relative advantage of the strong model: 50.6%** — comfortably clearing the 15% bar used to confirm a task set meaningfully separates a strong model from a weak one. The weak model loses points in exactly the ways the negative criteria target: it flips the correlation comparison, averages the margin the wrong way, states correlation as causation, and slips on a total.
+**Relative advantage of the strong model: 50.6%** - comfortably clearing the 15% bar used to confirm a task set meaningfully separates a strong model from a weak one. The weak model loses points in exactly the ways the negative criteria target: it flips the correlation comparison, averages the margin the wrong way, states correlation as causation, and slips on a total.
 
 Full detail: [`reports/comparison.md`](reports/comparison.md) and the per-model scorecards in [`reports/`](reports/).
 
@@ -45,7 +45,7 @@ Full detail: [`reports/comparison.md`](reports/comparison.md) and the per-model 
 
 | ID | Task | Weakness it targets |
 |---|---|---|
-| T01 | What drives market cap — revenue or profit? | Confusing which of two similar correlations is stronger |
+| T01 | What drives market cap - revenue or profit? | Confusing which of two similar correlations is stronger |
 | T02 | Average net margin and sector ranking | Averaging a ratio the wrong way |
 | T03 | Valuation drivers (open) | Correlation stated as causation |
 | T04 | Quarter-on-quarter growth | Absolute difference vs percentage change |
@@ -57,11 +57,11 @@ See [`tasks/task_bank.md`](tasks/task_bank.md) and [`docs/failure-taxonomy.md`](
 
 ## What this demonstrates
 
-- **Adversarial prompt / test design** — prompts built around known model weaknesses.
-- **Rubric design at scale** — seven weighted rubrics, positive and negative criteria, applied as structured data.
-- **Ground-truth verification** — every answer is generated and reproducible.
-- **Model comparison** — the relative-advantage method used to confirm a benchmark discriminates.
-- **Reproducibility and QA methodology** — fixed data, a deterministic scorer, and traceable scorecards.
+- **Adversarial prompt / test design** - prompts built around known model weaknesses.
+- **Rubric design at scale** - seven weighted rubrics, positive and negative criteria, applied as structured data.
+- **Ground-truth verification** - every answer is generated and reproducible.
+- **Model comparison** - the relative-advantage method used to confirm a benchmark discriminates.
+- **Reproducibility and QA methodology** - fixed data, a deterministic scorer, and traceable scorecards.
 
 A companion repo, [evaluation-rubric-library](https://github.com/anuradha9232/evaluation-rubric-library), documents the rubric-writing method that FinEval applies here.
 
